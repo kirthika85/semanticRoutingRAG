@@ -51,7 +51,7 @@ for intent, examples in intents.items():
     intent_embeddings[intent] = models["embedding"].encode(examples)
 
 # Streamlit UI
-st.title("Semantic Router + Gemini Travel Assistant")
+st.title("Semantic Router RAG POC")
 
 user_query = st.text_input("Ask your travel question:")
 response_container = st.empty()
